@@ -8,6 +8,7 @@ centos7
 一、一键安装
 
 wget http://down.08mb.com/tcp_opz/tcpa/tcpa.sh
+
 sh tcpa.sh
 
 使用说明:一键包会自动安装依赖(仅epel-release、net-tools)和内核并重启，重启后安装自动完成无需人工干预。
@@ -15,6 +16,7 @@ sh tcpa.sh
 二、手动安装：
 
 参考：https://www.lijian.me/141.html
+
 部署流程：
 
 安装必要依赖:
