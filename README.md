@@ -25,19 +25,17 @@ yum -y install net-tools
 
 更换系统内核
 
-[root@vultr ~]# wget http://down.08mb.com/tcp_opz/tcpa/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.rpm
+wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.zip
 
-[root@vultr ~]# rpm -ivh kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.rpm --force
+wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.z01
 
-Preparing...                          ################################# [100%]
+yum install -y unzip zip
 
-Updating / installing...
+unzip -j  kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.zip
 
-   1:kernel-3.10.0-693.5.2.tcpa06.tl2 ################################# [100%]
-   
-Install kernel
+rpm -ivh kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.rpm --force
 
-Set Grub default to "3.10.0-693.5.2.tcpa06.tl2" Done.
+
 
 重启操作系统
 
