@@ -9,6 +9,10 @@ centos7
 
 wget http://down.08mb.com/tcp_opz/tcpa/tcpa.sh
 
+或
+
+wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/tcpa.sh
+
 sh tcpa.sh
 
 使用说明:一键包会自动安装依赖(仅epel-release、net-tools)和内核并重启，重启后安装自动完成无需人工干预。
