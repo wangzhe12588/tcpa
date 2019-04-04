@@ -25,13 +25,13 @@ yum -y install net-tools
 
 更换系统内核
 
-wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.zip
-
-wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.z01
+wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.zip && wget --no-check-certificate https://raw.githubusercontent.com/wangzhe12588/tcpa/master/kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.z01
 
 yum install -y unzip zip
 
-unzip -j  kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.zip
+cat kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.z*>kernel-3.10.0-693.5.2.zip
+
+unzip kernel-3.10.0-693.5.2.zip
 
 rpm -ivh kernel-3.10.0-693.5.2.tcpa06.tl2.x86_64.rpm --force
 
