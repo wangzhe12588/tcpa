@@ -43,7 +43,7 @@ reboot
 
 下载主程序：
 
-wget http://down.08mb.com/tcp_opz/tcpa/tcpa_packets_180619_1151.tar.gz
+wget --no-check-certificate https://github.com/wangzhe12588/tcpa/raw/master/tcpa_packets_180619_1151.tar.gz
 
 开始安装：
 
